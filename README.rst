@@ -39,7 +39,9 @@ Given a course, Chucks will build:
 * Handouts for students - a PDF document of all the slides.
 * A bunch of HTML documents for the exercises and solutions.
 
-Here's an example: an `Intro to Django from OSCON 2012`
+Here's an example: an `Intro to Django from OSCON 2012`__.
+
+__ http://training.revsys.com/oscon2012/
 
 A **library** is the top-level container for a Chucks "setup" consisting of a
 bunch of modules and a bunch of courses. It doeesn't actually have to exist,
