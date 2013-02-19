@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+</head>
+<body>
+  <div id="plate">
+    <h1>{{ course.title }}</h1>
+    <p>{{ library.author }}</p>
+    <p>Copyright &copy; {{ today.year }} {{ library.company }}. <br>All rights reserved.</p>
+  </div>
+  <h1>Table of Contents</h1>
+  <div id="toc">
+    {% for section in sections %}
+      <div class="section">
+        <h2>{{ loop.index }}. {{ section.title }}</h2>
+        <ul>
+          {% for entry in section.toc %}
+            <li>{{ entry.title|truncate(45) }}<span>{{ entry.page }}</span></li>
+          {% endfor %}
+        </ul>
+      </div>
+    {% endfor %}
+  </div>
+</body>
+</html>
+

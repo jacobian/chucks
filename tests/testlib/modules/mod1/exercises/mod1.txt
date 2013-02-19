@@ -1,0 +1,8 @@
+Exercise 1
+==========
+
+.. objective::
+
+    * Test that the Sphinx builder works OK.
+
+Hey look, it does!

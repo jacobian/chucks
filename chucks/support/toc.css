@@ -1,0 +1,54 @@
+body {
+    font-family: "Helvetica Neue";
+}
+
+#plate {
+    page-break-after: always;
+    text-align: center;
+}
+
+#plate h1 {
+    font-size: 22pt;
+}
+
+#plate p {
+    font-size: 18pt;
+    margin: 120pt 0;
+}
+
+h1 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 18pt;
+}
+
+#toc h2 {
+    font-weight: bold;
+    font-size: 11pt;
+    margin: 6pt 0;
+    padding: 0;
+}
+
+#toc {
+    columns: 2;
+}
+
+#toc .section {
+    page-break-inside: avoid;
+}
+
+#toc ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0 0 0 14pt;
+    font-size: 9pt;
+    line-height: 11pt;
+}
+
+#toc ul li span {
+    float: right;
+}
+
+#toc ul li::after {
+    content: leader('.');
+}
